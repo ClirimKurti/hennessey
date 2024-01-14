@@ -1,0 +1,18 @@
+{
+    "name": "fitatech/web-agency",
+    "autoload": {
+        "psr-4": {
+            "Hennessey\\": "app/"
+        },
+        "classmap": ["TwigExtension.php"]
+    },
+    "authors": [
+        {
+            "name": "clirimkurti",
+            "email": "clirimkurti@hennessey.com"
+        }
+    ],
+    "require": {
+        "twig/twig": "^3.8"
+    }
+}

@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --black-200: #1E1E1E;
+    --white-200: #F6F6F6;
+    --custom-ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Header */
+.nav-menu-item::before {
+    content: '';
+    width: 0%;
+    height: 1px;
+    position: absolute;
+    bottom: -20%;
+    left: 0;
+    background-color: var(--black-200);
+    transition: .2s ease-out;
+}
+
+.nav-menu-item:hover::before {
+    width: 100%;
+    transition: .25s ease-out;
+}
+
+.header-navigation.scrolled {
+    position: fixed;
+    background-color: var(--white-200);
+    animation: header 0.2s forwards var(--custom-ease);
+}
+
+
+
+@keyframes header {
+    from {
+        height: 40px;
+    }
+
+    to {
+        height: 75px;
+    }
+}
+
+.header-navigation.scrolled .hero-bg {
+    display: none;
+}
+
+.header-navigation.scrolled .logo {
+    color: var(--black-200);
+}
+
+/* Footer */
+.footer {
+    background-image: url("https://assets.website-files.com/6034f09e2bcbb243decf80bb/603538edc30d2a7b12b43a58_105.svg"), url("https://assets.website-files.com/6034f09e2bcbb243decf80bb/603538ede97d105b3829764c_104.svg"), url("https://assets.website-files.com/6034f09e2bcbb243decf80bb/603538edf42dc15b03200b37_65.svg");
+    background-position: 100% 100%, 100% 50%, 0px 0px;
+    background-size: auto, auto, auto;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+}
