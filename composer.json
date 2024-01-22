@@ -1,5 +1,5 @@
 {
-    "name": "fitatech/web-agency",
+    "name": "clirimkurti/hennessey",
     "autoload": {
         "psr-4": {
             "Hennessey\\": "app/"
@@ -13,6 +13,7 @@
         }
     ],
     "require": {
-        "twig/twig": "^3.8"
+        "twig/twig": "^3.8",
+        "timber/timber": "^2.0"
     }
 }
